@@ -1,7 +1,7 @@
 # mono-config
 
-The `mono-config` package provides a simple way to manage configuration for your mono-repo projects.
-We wrap the commonly used [config](https://www.npmjs.com/package/config) package to provide additional functionality, specifically for mono-repos.
+The `mono-config` package provides a simple way to share and manage configuration across your monorepo.
+We wrap the commonly used [config](https://www.npmjs.com/package/config) package to provide additional functionality, specifically for monorepos.
 
 ## Installation
 
@@ -59,14 +59,14 @@ If the value of the `first_app` configuration does not meet the schema, an error
 
 ### ConfigManager
 
-This class will help ou manage your configurations accross microservices in your mono-repo.
+This class will help ou manage your configurations accross microservices in your monorepo.
 Import the `ConfigManager` class from `mono-config`:
 
 ```typescript
 import { ConfigManager } from "mono-config";
 ```
 
-Let's assume your configuration looks like this:
+Let's assume your monorepo configuration looks like this:
 
 ```json
 {
@@ -128,7 +128,7 @@ Next, create a new instance of `ConfigManager`:
 const configManager = new ConfigManager(cmm);
 ```
 
-Tada, you can now access your configurations using the `configManager` object :tada:
+Tada :tada:, you can now access your configurations using the `configManager` object!
 
 ```typescript
 const firstAppName = configManager.get("firstApp").name; // Strongly typed!
