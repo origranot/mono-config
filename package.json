@@ -2,6 +2,7 @@
   "name": "mono-config",
   "version": "1.0.0",
   "author": "origranot",
+  "homepage": "https://github.com/origranot/mono-config.git",
   "license": "ISC",
   "exports": {
     ".": {
@@ -42,6 +43,10 @@
   "dependencies": {
     "config": "^3.3.12",
     "zod": "^3.24.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/origranot/mono-config.git"
   },
   "keywords": [
     "config",
